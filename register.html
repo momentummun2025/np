@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Momentum MUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" height="50px" alt="Momentum MUN Logo">
+                Momentum MUN
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="committees.html">Committees</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="nav-btn active">Register</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Register for Momentum MUN</h1>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register">
+        <div class="container">
+            <h2>Join the Debate</h2>
+            <div class="registration-form">
+                <form id="mun-registration">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" title="Please enter only letters and spaces">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">School/Institution</label>
+                        <input type="text" id="institution" name="institution" required pattern="[A-Za-z0-9\s]+" title="Please enter your school or institution name">
+                    </div>
+                    <div class="form-group">
+                        <label for="committee">Committee Preference</label>
+                        <select id="committee" name="committee" required>
+                            <option value="">Select a committee</option>
+                            <option value="UNSC">UN Security Council</option>
+                            <option value="WHO">World Health Organization</option>
+                            <option value="UNESCO">UNESCO</option>
+                            <option value="UNHRC">UN Human Rights Council</option>
+                            <option value="CRISIS">Crisis Committee</option>
+                            <option value="DISEC">DISEC</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">MUN Experience</label>
+                        <select id="experience" name="experience">
+                            <option value="none">No experience</option>
+                            <option value="beginner">Beginner (1-2 conferences)</option>
+                            <option value="intermediate">Intermediate (3-5 conferences)</option>
+                            <option value="advanced">Advanced (5+ conferences)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Why do you want to participate?</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Registration</button>
+                </form>
+                <div class="success-message" id="success-message">
+                    <i class="fas fa-check-circle" style="font-size: 3rem; color: #28a745; margin-bottom: 15px;"></i>
+                    <h3>Registration Successful!</h3>
+                    <p>Thank you for registering for Momentum MUN. We'll be in touch with more details soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Momentum MUN</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="committees.html">Committees</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Momentum MUN. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees - Momentum MUN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" height="50px" alt="Momentum MUN Logo">
+                Momentum MUN
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="committees.html" class="active">Committees</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="nav-btn">Register</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Committees</h1>
+        </div>
+    </section>
+
+    <!-- Committees Section -->
+    <section id="committees">
+        <div class="container">
+            <h2>Engage in Global Debate</h2>
+            <div class="committees-grid">
+                <div class="committee-card" data-committee="unsc" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=UNSC">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=UNSC" alt="United Nations Security Council emblem">
+                    </div>
+                    <div class="committee-content">
+                        <h3>UN Security Council</h3>
+                        <p>Addressing international peace and security issues with executive authority.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="committee-card" data-committee="who" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=WHO">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=WHO" alt="World Health Organization logo">
+                    </div>
+                    <div class="committee-content">
+                        <h3>World Health Organization</h3>
+                        <p>Focusing on global health initiatives, pandemic response, and healthcare equity.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="committee-card" data-committee="unesco" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=UNESCO">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=UNESCO" alt="UNESCO logo">
+                    </div>
+                    <div class="committee-content">
+                        <h3>UNESCO</h3>
+                        <p>Promoting education, scientific collaboration, and cultural heritage preservation.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="committee-card" data-committee="unhrc" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=UNHRC">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=UNHRC" alt="UN Human Rights Council logo">
+                    </div>
+                    <div class="committee-content">
+                        <h3>UN Human Rights Council</h3>
+                        <p>Protecting and promoting human rights across the globe.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+                <div class="committee-card" data-committee="crisis" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=CRISIS">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=CRISIS" alt="Crisis Committee icon">
+                    </div>
+                    <div class="committee-content">
+                        <h3>Crisis Committee</h3>
+                        <p>A dynamic, fast-paced committee simulating real-time crisis scenarios.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+                 <div class="committee-card" data-committee="disec" data-image="https://placehold.co/400x300/4169E1/FFFFFF?text=DISEC">
+                    <div class="committee-img">
+                        <img src="https://placehold.co/400x300/4169E1/FFFFFF?text=DISEC" alt="DISEC logo">
+                    </div>
+                    <div class="committee-content">
+                        <h3>DISEC</h3>
+                        <p>Discussing issues of disarmament and international security.</p>
+                        <a href="#" class="btn btn-secondary committee-learn-more">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Modal -->
+    <div class="modal" id="committee-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modal-image" src="" alt="Committee Image" class="modal-image">
+            <h2 id="modal-title">Committee Title</h2>
+            <p id="modal-description">Detailed committee description goes here.</p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Momentum MUN</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="committees.html">Committees</a>
+                    <a href="team.html">Our Team</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2023 Momentum MUN. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
